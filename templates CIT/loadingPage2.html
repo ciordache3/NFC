@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loading</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <script>
+$(window).load(function() {
+    $(".bg_load").fadeOut("slow");
+    // $(".wrapper").fadeOut("slow");
+})
+
+       
+    </script>
+    <style>
+.animationload {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.osahanloading {
+    animation: 1.5s linear 0s normal none infinite running osahanloading;
+    background: rgba(79, 45, 127, 0.5) none repeat scroll 0 0;
+    border-radius: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+}
+.osahanloading::after {
+    animation: 1.5s linear 0s normal none infinite running osahanloading_after;
+    border-color: rgba(149, 129, 178,0.4) transparent;
+    border-radius: 80px;
+    border-style: solid;
+    border-width: 10px;
+    content: "";
+    height: 80px;
+    left: -15px;
+    position: absolute;
+    top: -15px;
+    width: 80px;
+}
+@keyframes osahanloading {
+0% {
+    transform: rotate(0deg);
+}
+50% {
+    background: rgba(203, 196, 188,0.2) none repeat scroll 0 0;
+    transform: rotate(180deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+</style>
+
+
+<!-- <div id="logo3">
+    <img src="\static\gt.png" Style="float:right; margin-right: 30px;  ">
+</div> -->
+
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h2>Creative Animated Loading icon in HTML5 CSS3</h2>
+            </div>    
+            <div class="animationload">
+                <div class="osahanloading"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

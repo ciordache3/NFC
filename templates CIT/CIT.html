@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CIT Questionare</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="__CDN URL__"></script>
+    <script src="script.js"></script>
+
+    
+<script>
+function completed(divId){
+    document.getElementById(divId).style.backgroundColor="#C0F0D3";
+}
+  function showDiv(divId, element)
+{
+    // selectElement.selectedIndex=0;
+    document.getElementById(divId).style.display = element.value == "yes" ? 'block' : 'none';
+}
+function showDivNo(divId, element)
+{
+    document.getElementById(divId).style.display = element.value == "no" ? 'block' : 'none';
+}
+function showDiv2elements(divId1,divId2, element)
+{
+    document.getElementById(divId1).style.display = element.value == "yes" ? 'block' : 'none';
+    document.getElementById(divId2).style.display = element.value == "yes" ? 'block' : 'none';
+}
+function showDiv2elementsNo(divId1,divId2, element)
+{
+    document.getElementById(divId1).style.display = element.value == "no" ? 'block' : 'none';
+    document.getElementById(divId2).style.display = element.value == "no" ? 'block' : 'none';
+}
+function showDiv3elements(divId1,divId2,divId3, element)
+{
+    document.getElementById(divId1).style.display = element.value == "yes" ? 'block' : 'none';
+    document.getElementById(divId2).style.display = element.value == "yes" ? 'block' : 'none';
+    document.getElementById(divId3).style.display = element.value == "yes" ? 'block' : 'none';
+}
+function showDiv3elementsNo(divId1,divId2,divId3, element)
+{
+    document.getElementById(divId1).style.display = element.value == "no" ? 'block' : 'none';
+    document.getElementById(divId2).style.display = element.value == "no" ? 'block' : 'none';
+    document.getElementById(divId3).style.display = element.value == "no" ? 'block' : 'none';
+}
+function dontShowDivNo(divId1, element)
+{   
+    if (element.value=="no"){
+    
+    document.getElementById(divId1).style.display =  'none';
+
+    }
+}
+function dontShowDiv3elementsNo(divId1,divId2,divId3, element)
+{   
+    if (element.value=="no"){
+    
+    document.getElementById(divId1).style.display =  'none';
+
+    document.getElementById(divId2).style.display =  'none'; 
+
+    document.getElementById(divId3).style.display =  'none';
+    }
+}
+function dontShowDiv4elementsNo(divId1,divId2,divId3,divId4, element)
+{   
+    
+    if (element.value=="no"){
+    
+    document.getElementById(divId1).style.display =  'none';
+
+    document.getElementById(divId2).style.display =  'none';
+     
+    document.getElementById(divId3).style.display =  'none';
+
+    document.getElementById(divId4).style.display =  'none';
+ }
+}
+
+function dontShowDiv5elementsNo(divId1,divId2,divId3,divId4,divId5, element)
+{   
+    
+    if (element.value=="no"){
+    
+    document.getElementById(divId1).style.display =  'none';
+
+    document.getElementById(divId2).style.display =  'none';
+     
+    document.getElementById(divId3).style.display =  'none';
+
+    document.getElementById(divId4).style.display =  'none';
+
+    document.getElementById(divId5).style.display =  'none';
+ }
+}
+ function dontShowDiv6elementsNo(divId1,divId2,divId3,divId4,divId5,divId6, element)
+{   
+    
+    if (element.value=="no"){
+    
+    document.getElementById(divId1).style.display =  'none';
+
+    document.getElementById(divId2).style.display =  'none';
+     
+    document.getElementById(divId3).style.display =  'none';
+
+    document.getElementById(divId4).style.display =  'none';
+
+    document.getElementById(divId5).style.display =  'none';
+
+    document.getElementById(divId6).style.display =  'none';
+ }
+}
+function dontShowDiv2elementsNo(divId1,divId2, element)
+{   
+    if (element.value=="no"){
+    
+    document.getElementById(divId1).style.display =  'none';
+
+    document.getElementById(divId2).style.display =  'none'; 
+
+     }
+}
+function dontShowDivYes(divId1, element)
+{   
+    if (element.value=="yes"){
+    
+    document.getElementById(divId1).style.display =  'none';
+
+    // document.getElementById(divId2).style.display =  'none'; 
+
+     }
+}
+
+
+
+</script>
+<style>
+    .fileUpload {
+position: relative;
+overflow: hidden;
+
+}
+.fileUpload input.upload {
+position: absolute;
+top: 0;
+right: 0;
+margin: 0;
+padding: 0;
+font-size: 20px;
+cursor: pointer;
+opacity: 0;
+filter: alpha(opacity=0);
+}
+/* .fileUpload input.upload {
+background:black;
+} */
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400';
+
+
+body {
+font-family: 'Raleway:300', sans-serif;
+/* height: 100%; */
+/* margin: 0; */
+/* background-repeat: no-repeat; */
+
+/* background-attachment: fixed; */
+/* min-height: 100%; */
+/* background: rgb(72,25,122); */
+/* background: linear-gradient(0deg, rgba(72,25,122,0.8578781854538691) , rgba(179,145,215,0.7990546560421043) , rgba(198,186,212,0.8046568969384629) , rgba(235,234,237,1) , rgba(243,241,246,1) 60%, rgba(255,255,255,255) ); */
+}
+
+
+
+
+img{
+position:relative;
+top:0;
+left:220px;
+}
+/* body { */
+/* margin: 0; */
+/* height: 100vh; */
+/* display: flex; */
+/* align-items: center; */
+/* background-image: url("/static/background.jpg");  */
+
+/* justify-content: left; */
+/* background: rgb(72,25,122); */
+/* background: linear-gradient(0deg, rgba(72,25,122,0.8578781854538691) 0%, rgba(179,145,215,0.7990546560421043) 13%, rgba(198,186,212,0.8046568969384629) 31%, rgba(235,234,237,1) 50%, rgba(243,241,246,1) 60%, rgba(255,255,255,255) 100%); */
+/* } */
+body { 
+height:100%;
+background: url("/static/background-1.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+/* .pixelated-scroll {
+  width: 100%;
+  height: 90%;
+  image-rendering: pixelated;
+  background-image: url("/static/expur.png");
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  box-sizing: border-box;
+animation: slide 10s linear infinite;
+}
+@keyframes slide {
+  from { background-position: left bottom; }
+  to { background-position: 100% bottom; }
+} */
+html{
+height:100%;
+}
+/* h6 {
+  color: #fff;
+  } */
+
+  .pd-top{            
+  padding-top: 60px!important;
+  }
+
+  .location {
+  margin-left: 0px;
+  padding-left: 0px;
+  }
+  .location li {
+  padding: 10px 1px 6px 9px!important;
+  margin-bottom: 2px;
+  list-style: none;
+  background: linear-gradient(to right,rgba(105, 69, 141, 0.858), rgb(148, 102, 173));
+  }
+  .location li img {
+  width: 20px;
+  }
+  /*normal*/
+  .location li a {
+  color: #ffffff;
+  font-size: 15px;
+  padding-left: 5px;
+  }     
+   /*radius-4*/
+  .radius-4px {   
+  border-radius: 5px;
+  }
+  /*radius-40*/
+  .radius-40px{
+  border-radius: 40px;
+  }
+  /*curve*/
+  .curve {
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  }
+  /*curveLeft*/
+  .curveLeft {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  }
+  /*curveRight*/
+  .curveRight {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+   /*rotate*/
+  .rotate{
+  transform: skew(-21deg);
+  }
+   .location li:hover a {
+  text-decoration: none;
+  color: #dcd9d9
+  }
+  .location li:focus input {
+  text-decoration: none;
+  color: #dcd9d9
+  }
+  .gradient-shadow {
+background: rgba(0, 0, 0, 0.2);
+background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, #fff 100%);
+background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%,#fff 100%);
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%,#fff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 0.2)', endColorstr='#fff',GradientType=1 );
+filter: blur(2px);
+width: 755px;
+height: 500px;
+/*position: relative;*/
+/*left: 0px;*/
+/*top: 10px;*/
+margin: 0 auto;
+}
+.shadow-box {
+width: 750px;
+/* background: #fff; */
+padding: 20px;
+/*position: relative;*/
+/*margin-top: -485px;*/
+/*height: 500px;*/
+}
+#logo{ 
+/* position:fixed;  */
+top:0; 
+left:80px;
+/* left:10px;  */
+/*left:12;*/
+} 
+.container{
+left:10px;
+}
+img {
+top:0;
+left:10px;
+}
+.col-sm{
+padding-left: 10px;
+padding-right: 2px;
+}
+/* .panel-title{
+padding: 10px 1px 6px 9px!important;
+  margin-bottom: 2px;
+  list-style: none;
+  background: linear-gradient(to right,rgba(72,25,122,0.8578781854538691), rgb(148, 102, 173));
+  color: #ffffff;
+  font-size: 15px;
+  padding-left: 5px;
+  text-decoration: none;
+  color: #dcd9d9
+
+} */
+
+
+
+input:focus + label {
+outline: 2px solid;
+}
+#file {
+display:none;
+}
+.inputfile {
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+z-index: -1;
+}
+#logoFirma{
+opacity:1;
+}
+#hide input[type=file]:active + label {
+background-image: none;
+background-color:#2D6C7A;
+color:#FFFFFF;
+}
+.form-group{
+    background:""
+}
+input#file {
+display: inline-block;
+width: 100%;
+padding: 120px 0 0 0;
+height: 100px;
+overflow: hidden;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+/* background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4; */
+border-radius: 20px;
+background-size: 60px 60px;
+}
+::-webkit-file-upload-button {
+display: none;
+}
+form {
+max-width: 900px;
+color:white;
+display: block;
+margin: 0 auto;
+/* width: 100rem;  */
+opacity:0.95; 
+background:#442f5ff8;
+}
+
+
+</style>
+
+</head>
+<body>
+    <div id="logo">
+        <img src="\static\gt.png" Style="margin-left:25px;position:center; margin-top:30px; ">
+    </div>
+    
+    <form class="p-3">
+        
+        <div class="card text-white" style="width: 867px; opacity:0.95; background:#442f5ff8; margin-left:0px;">
+            <div class="card-header" style="opacity:1;height:50px;">
+                <img src="\static\expur.png" Style=" width:40px; height:40px;float:left;">
+                
+                <h3 class="card-title" style="font-size:large;float:left;margin-top:10px;margin-left:30px;">CIT Questionaire</h3>
+            </div>
+            <div class="card-body">
+                <p class="card-text" style="font-size:small"><b>Pentru a putea efetua calculul impozitului pe profit, va rugam sa raspundeti la intrebarile din chestionarul de mai jos.<br></br>La final, pentru a salva raspunsurile, apasati "Submit".</p>
+            </div>
+        </div>
+        <!-- <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Joe Smith">
+        </div>
+         -->
+        <div class="form-group" id="q1">
+            <label for="selectq1">1. Societatea a vandut sau casat (a scos din functiune) mijloace fixe in perioada
+                20XX-20XX?</label>
+            <select class="form-control" id="selectq1" onchange="showDiv('q1.1',this);dontShowDiv4elementsNo('q1.1','q1.1No','q1.2','q1.2Yes',this);completed('selectq1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q1.1" style="display:none">
+            <label for="selectq1.1">1.1. Societatea a valorificat mijloacele fixe sau partile componente in activitatea proprie
+                sau prin vanzare? </label>
+            <select class="form-control" id="selectq1.1" onchange="showDivNo('q1.1No', this);showDiv('q1.2',this);completed('selectq1.1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q1.1No" style="display:none">
+            <label for="selectq1.1No">1.1 Va rugam introduceti valoarea cheltuielii cu scoaterea din gestiune a mijloacelor fixe care nu au fost valorificate. Aceasta valoare va fi inclusa la categoria "alte cheltuieli nedeductibile" rand CIT33. </label>
+            <input type="number" id="input q1.1No" >
+        </div>
+        <div class="form-group" id="q1.2" style="display:none">
+            <label for="selectq1.2">1.2. Au existat rezerve din reevaluare, efectuata dupa 01.01.2004, pentru mijloacele fixe casate care au fost deduse anterior si nu au fost impozitate pana la momentul scoaterii din gestiune?  </label>
+            <select class="form-control" id="selectq1.2" onchange="showDiv('q1.2Yes', this);completed('selectq1.2');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q1.2Yes" style="display:none">
+            <label for="selectq1.2Yes">1.2 Va rugam introduceti valoarea acestor rezerve deduse si neimpozitate. Aceasta valoare va fi trecuta la Elemente Similare Veniturilor din D101 (rand CIT08). </label>
+            <input type="number" id="input q1.2Yes" >
+        </div>
+        <div class="form-group" id="q2">
+            <label for="selectq2">2. Societatea aplica regimul fiscal de amortizare accelerata pentru deprecierea
+                activelor?</label>
+            <select class="form-control" id="selectq2" onchange="showDiv('q2.1', this);dontShowDiv2elementsNo('q2.1','q2.1No',this);completed('selectq2');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q2.1" style="display:none">
+            <label for="selectq2.1">2.1 Valoarea fiscala a activelor este egala cu valoarea contabila (i.e. amortizarea
+                contabila = amortizarea fiscala)? </label>
+            <select class="form-control" id="selectq2.1" onchange="showDivNo('q2.1No', this);completed('selectq2.1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q2.1No" style="display:none">
+            <label for="selectq2.1No">Va rugam introduceti valoarea deducerii fiscale a activelor detinute de societate. Aceasta valoare se include la randul CIT11. </label>
+            <input type="number" id="input q2.1No" >
+        </div>
+        <div class="form-group" id="q3">
+            <label for="selectq3">3. Societatea aplica durate de viata diferite din punct de vedere contabil si fiscal (i.e.
+                amortizarea contabila = amortizarea fiscala) ?</label>
+            <select class="form-control" id="selectq3" onchange="showDiv('q3.1Yes', this);completed('selectq3');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q3.1Yes" style="display:none">
+            <label for="selectq3.1">3.1 Va rugam introduceti valoarea deducerii fiscale a activelor detinute de societate. Aceasta valoare se include la randul CIT11. </label>
+            <input type="number" id="input q3.1Yes" >
+        </div>
+        <div class="form-group" id="q4">
+            <label for="selectq4">4. Societatea a aplicat deducerea de amortizare in cota de 20% pentru bunuri achizitionate pana la 30.04.2005?</label>
+            <select class="form-control" id="selectq4" onchange="completed('selectq4');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q5">
+            <label for="selectq4">5.Aceste mijloace fixe au fost instrainate inainte de expirarea unei jumatati din perioada lor normala de functionare ?</label>
+            <select class="form-control" id="selectq5" onchange="completed('selectq5');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+          <div class="form-group" id="q6">
+            <label for="selectq6">6. Societatea a inregistrat venituri din reevaluarea activelor detinute in proprietate, care compenseaza cheltuielile cu descresterile anterioare aferente aceleiasi imobilizari?</label>
+            <select class="form-control" id="selectq6" onchange="showDiv('q6.1Yes', this);completed('selectq6');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        
+        <div class="form-group" id="q6.1Yes" style="display:none">
+            <label for="selectq6.1">Va rugam introduceti valoarea venitului inregistrat din reevaluarea activelor care compenseaza cheltuielile cu descresterile anterioare aferente aceleiasi imobilizari. Aceasta valoare se include la randul CIT20. </label>
+            <input type="number" id="input q6.1Yes" >
+        </div>
+        <div class="form-group" id="q7">
+            <label for="selectq7">7. Societatea a inregistrat cheltuieli din reevaluarea activelor detinute in proprietate ca
+                urmare a efectuarii unei reevaluari ce inregistreaza o descrestere a valorii imobilizarilor?</label>
+            <select class="form-control" id="selectq7" onchange="showDiv('q7.1Yes', this);completed('selectq7');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q7.1Yes" style="display:none">
+            <label for="selectq7.1">Va rugam introduceti valoarea cheltuielii inregistrat din reevaluarea activelor. Aceasta valoare se include la randul CIT33. </label>
+            <input type="number" id="input q7.1Yes" >
+        </div>
+        
+        <div class="form-group" id="q7">
+            <label for="selectq7">7. Societatea inregistreaza cheltuieli cu activitati de cercerate-dezvoltare?</label>
+            <select class="form-control" id="selectq7" onchange="showDiv2elements('q7.1','q7.2', this);dontShowDiv4elementsNo('q7.1','q7.1Yes','q7.2','q7.2Yes',this);completed('selectq7');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q7.1" style="display:none">
+            <label for="selectq7.1">7.1. Daca da, societatea a beneficiat de deducerea suplimentara la calculul profitului impozabil in proportie de 50% a cheltuielilor eligibile pentru aceste activitati? </label>
+            <select class="form-control" id="selectq7.1" onchange="showDiv('q7.1Yes', this);dontShowDivNo('q7.1Yes',this);completed('selectq7.1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q7.1Yes" style="display:none">
+            <label for="selectq7.1Yes"> Va rugam introduceti valoarea deducerii suplimentare din R&D. Aceasta valoare se include la randul CIT15.1. </label>
+            <input type="number" id="input q7.1Yes" >
+        </div>
+        <div class="form-group" id="q7.2" style="display:none">
+            <label for="selectq7.1">7.2. Daca da, a aplicat metoda de amortizare accelerata in cazul aparaturii si echipamentelor destinate activitatilor de cercetare-dezvoltare? </label>
+            <select class="form-control" id="selectq7.2" onchange="showDiv('q7.2Yes',this);completed('selectq7.2');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q7.2Yes" style="display:none">
+            <label for="selectq7.2Yes" style="color:red;"> DISCLAIMER! Daca da, va rugam sa va asigurati ca valoarea fiscala a fost modificata in mod corespunzator pentru activele respective. </label>
+            <!-- <input type="number" id="input q6.2Yes" > -->
+        </div>
+        <div class="form-group" id="q8">
+            <label for="selectq8">8. Societatea a investit in productia si/sau achizitia de echipamente tehnologice, calculatoare electronice și echipamente periferice, mașini și aparate de casă, de control și de facturare, precum și în programe informatice?</label>
+            <select class="form-control" id="selectq8" onchange="showDiv('q8.1', this);dontShowDiv6elementsNo('q8.1','q8.1Yes','q8.2','q8.2Yes','q8.3','q8.3No',this);completed('selectq8');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q8.1" style="display:none">
+            <label for="selectq8.1">8.1. A beneficiat de scutirea de impozit pe profit a profitului reinvestit?</label>
+            <select class="form-control" id="selectq8.1" onchange="showDiv3elements('q8.1Yes','q8.2', 'q8.3',this);completed('selectq8.1'); dontShowDiv5elementsNo('q8.1Yes','q8.2','q8.2Yes','q8.3','q8.3No',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q8.1Yes" style="display:none">
+            <label for="selectq8.1Yes">Va rugam introduceti valoarea scutirii din profitul reinvestit. Aceasta valoare se include la randul CIT43.2.1. </label>
+            <input type="number" id="input q8.1Yes" >
+        </div>
+        <div class="form-group" id="q8.2" style="display:none">
+            <label for="selectq8.2">8.2. Societatea a vandut activele respective inainte de expirarea perioadei egale cu cu jumătate din durata lor de utilizare economică (i.e. le-a pastrat cel putin de 5 ani) ?</label>
+            <select class="form-control" id="selectq8.2" onchange="showDiv('q8.2Yes', this);completed('selectq8.2');dontShowDivNo('q8.2Yes', this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q8.2Yes" style="display:none">
+            <label for="selectq8.2Yes" style="color:red;"> DISCLAIMER! Se corecteaza valoarea inclusa la 8.1 (CIT43.2.1), inclusiv anterior. </label>
+            <div>
+            <input type="number" id="input q8.2Yes" >
+            </div>
+        </div>
+        
+        <div class="form-group" id="q8.3" style="display:none">
+            <label for="selectq8.3">8.3. Metoda de amortizare aplicata de catre societate pentru activele respective a fost metoda liniara?</label>
+            <select class="form-control" id="selectq8.3" onchange="showDivNo('q8.3No', this);completed('selectq8.3');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q8.3No" style="display:none">
+            <label for="selectq8.3Yes" style="color:red;"> DISCLAIMER! Se corecteaza valoarea inclusa la 8.1 (CIT43.2.1), inclusiv anterior. </label>
+            <div>
+            <input type="number" id="input q8.3No" >
+            </div>
+        </div>
+        
+          <div class="form-group" id="q9">
+            <label for="selectq9">9. Societatea a diminuat/anulat/utilizat rezervele inregistrate?</label>
+            <select class="form-control" id="selectq9" onchange="showDivNo('q9.1Yes', this);completed('selectq9');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q9.1Yes" style="display:none">
+            <label for="selectq9.1Yes">Va rugam introduceti valoarea diminuata/anulata/utilizata a rezervelor inregsitrate. </label>
+            <input type="number" id="input q9.1Yes" >
+        </div>
+        de aici in jos e cu 10
+         <div class="form-group" id="q10">
+            <label for="selectq10">10. Rezerva legala a atins limita de 20% din capitalul social?</label>
+            <select class="form-control" id="selectq10" onchange="completed('selectq10');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q11">
+            <label for="selectq11">11. Societatea a inregistrat rezerve legale deductibile in perioada analizata?</label>
+            <select class="form-control" id="selectq11" onchange="showDiv('q11.1', this);completed('selectq11');dontShowDivNo('q11.1Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q11.1" style="display:none">
+            <label for="selectq11.1">11.1. Au existat reduceri de capital social, astfel incat sa existe un surplus al din rezerva legala dedusa?</label>
+            <select class="form-control" id="selectq11.1" onchange="showDiv('q11.1Yes',this);dontShowDivNo('q11.1Yes',this);completed('selectq11.1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q11.1Yes" style="display:none">
+            <label for="selectq11.1Yes">11.1 Va rugam sa introduceti valoarea rezervei legale deduse anterior peste pragul de 20% din capitalul social curent (redus). Aceasta valoare se include la 11.1 (CIT08). </label>
+            <input type="number" id="input q11.1Yes" >
+        </div>
+        <div class="form-group" id="q12">
+            <label for="selectq12">12. Societatea a inregistrat costuri cu instituții financiare (de ex: intre societati din cadrul grupului, banci, societati de leasing, IFN-uri etc) in alte conturi in afara de 665, 6651, 6652, 666, 765, 7651, 7652, 766?</label>
+            <select class="form-control" id="selectq12" onchange="showDiv('q12Yes',this);completed('selectq12');dontShowDivNo('q12Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q12Yes" style="display:none">
+            <label for="selectq12Yes" style="color:red;"> DISCLAIMER! Va rugam sa actualizati Testul - Costuri indatorare. </label>
+            
+        </div>
+        <div class="form-group" id="q13">
+            <label for="selectq13">13. Societatea a inregistrat costuri ale indatorarii reportate din perioade anterioare?</label>
+            <select class="form-control" id="selectq13" onchange="showDiv('q13Yes',this);completed('selectq13'); dontShowDivNo('q13Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q13Yes" style="display:none">
+            <label for="selectq13Yes">Va rugam sa introduceti valoarea acestori costuri ale indatorarii reportate din anii anteriori. Aceste valori se include la CIT12. </label>
+            <input type="number" id="input q13Yes" >
+        </div>
+        <div class="form-group" id="q14">
+            <label for="selectq14">14. Societatea a efectuat cheltuieli cu primele de asigurare care nu privesc activele și riscurile asociate activității contribuabilului? ? </label>
+            <select class="form-control" id="selectq14" onchange="showDiv('q14Yes',this);completed('selectq14'); dontShowDivNo('q14Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q14Yes" style="display:none">
+            <label for="selectq14Yes"> Va rugam sa introduceti valoarea acestor costuri cu primele de asigurare. Aceste valori se include la CIT33. </label>
+            <input type="number" id="input q14Yes" >
+        </div>
+        <div class="form-group" id="q15">
+            <label for="selectq15">15. Societatea a efectuat cheltuieli de reclamă şi publicitate în scopul popularizării firmei, produselor sau serviciilor fara documente justificative (e.g. documente care atesta prestarea)?</label>
+            <select class="form-control" id="selectq15" onchange="showDiv('q15Yes', this); completed('selectq15');showDivNo('q15.1', this);dontShowDivYes('q15.1Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q15Yes" style="display:none">
+            <label for="selectq15Yes" style="color:red;"> DISCLAIMER! In cazul lipsei documentelor justificative, autoritatile fiscale pot considera cheltuielile ca fiind nedeductibile </label>
+            
+        </div>
+        <div class="form-group" id="q16.1" style="display:none">
+            <label for="selectq16.1">16.1. Societatea a inregistrat cheltuieli de protocol in afara contului 623?</label>
+            <select class="form-control" id="selectq16.1" onchange="showDiv('q16.1Yes', this); completed('selectq16.1',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q16.1Yes" style="display:none">
+            <label for="selectq16Yes">Va rugam sa introduceti valoarea acestori costuri de protocol. Aceste valori se include limitarea in Testul de protocol </label>
+            <input type="number" id="input q16Yes" >
+        </div>
+        <div class="form-group" id="q17">
+            <label for="selectq17">17. Societatea a inregistrat cheltuieli cu taxele de inscriere, cotizaţiile şi contribuţiile datorate catre Organizaţiile neguvernamentale sau asociaţiile profesionale, alte organizatii care depasesc echivalentul in lei a 4.000 Euro?</label>
+            <select class="form-control" id="selectq17" onchange="showDiv('q17.1Yes', this);completed('selectq17');" >
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q17.1Yes" style="display:none">
+            <label for="selectq11Yes">Va rugam sa introduceti valoarea acestori costuri. Aceste valori se include la linia CIT33 </label>
+            <input type="number" id="input q17Yes" >
+        </div>
+        <div class="form-group" id="q18">
+            <label for="selectq18">18. Societatea a inregistrat cheltuielile sociale de natura cadourilor în bani sau în natură, inclusiv tichete cadou, servicii de sănătate acordate în cazul bolilor profesionale și al accidentelor de muncă, tichete culturale și tichete de creșă, sau orice alte cheltuieli de natura sociala?</label>
+            <select class="form-control" id="selectq18" onchange="showDiv('q18.1Yes', this);completed('selectq18');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q18.1Yes" style="display:none">
+            <label for="selectq18Yes">Va rugam introduceti valoarea acestor cheltuieli sociale. Aceasta valoare va fi inclusa in Testul pentru cheltuieli sociale. </label>
+            <input type="number" id="input q18Yes" >
+        </div>
+        <div class="form-group" id="q19">
+            <label for="selectq19">19. Societatea a inregistrat cheltuieli de sponsorizare catre entitati care entitati care nu se afla in Registrul entităților/unităților de cult de pe website-ul ANAF?</label>
+            <select class="form-control" id="selectq19" onchange="showDiv('q19.1Yes', this);completed('selectq19');" >
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q19.1Yes" style="display:none">
+            <label for="selectq19Yes">Va rugam introduceti valoarea cheltuielilor cu sponsorizarile efectuate catre entitati care nu se afla in Registru. Aceasta valoare va fi eliminata din creditul fiscal calculat. </label>
+            <input type="number" id="input q19Yes" >
+        </div>
+    <!--     <div class="form-group" id="q20">
+            <label for="selectq20">20. Societatea a inregistrat cheltuieli reprezentand pierderi ca urmare a neglijentei, sustrageri şi cele produse din alte cauze neimputabile sau determinate de cauze de forţă majora? </label>
+            <select class="form-control" id="selectq20" onchange="showDiv('q20.1Yes', this);completed('selectq20');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q20.1Yes" style="display:none">
+            <label for="selectq15Yes">Va rugam sa introduceti valoarea acestori costuri. Aceste valori se include la linia CIT33. </label>
+            <input type="number" id="input q20Yes" >
+        </div> -->
+        <div class="form-group" id="q20">
+            <label for="selectq20">20. Exista conturi contabile in care exista costuri auto atat deductibile integral (i.e. se califica la scutirea de la art. 25 Alin (3) lit. l din Codul Fiscal) cat si costuri auto 50% deductibile? </label>
+            <select class="form-control" id="selectq20" onchange="showDiv('q20No', this);completed('selectq20');showDivNo('q20.1',this);dontShowDivYes('q20.1Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q20No" style="display:none">
+            <label for="selectq20No">Va rugam sa includeti valoarea coturilor auto 50% deductibile din conturile mixte (i.e. conturile care contin atat sume deductibile cat si nedeductibile) </label>
+            <div>
+            <input type="number" id="input q20No" >
+        </div>
+        </div>
+        <div class="form-group" id="q20.1" style="display:none">
+            <label for="selectq20.1">20.1. Exista TVA nedeductibil aferenta costurilor auto determinate conform limitarii 50% de la art. 25 din Codul Fiscal?</label>
+            <select class="form-control" id="selectq20.1" onchange="showDiv('q20.1Yes', this);completed('selectq20.1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q20.1Yes" style="display:none">
+            <label for="selectq20Yes">Va rugam introduceti valoarea TVA nedeductibila aferenta cosutilor auto.  </label>
+            <div>
+            <input type="number" id="input q20.1Yes" >
+        </div>
+        </div>
+           <div class="form-group" id="q21">
+            <label for="selectq21">21. Exista persoane in conducerea Societatii care folosesc una, doua sau mai multe autovehicule?</label>
+            <select class="form-control" id="selectq21" onchange="completed('selectq21');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q22">
+            <label for="selectq18">22. Societatea a inregistrat cheltuieli cu dobanzi/majorari de intarziere, amenzi, confiscari si penalitati de intarziere catre autoritatile romane sau straine?</label>
+            <select class="form-control" id="selectq22" onchange="showDiv('q22Yes', this);completed('selectq22');" >
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q22Yes" style="display:none">
+            <label for="selectq22Yes">Va rugam introduceti valoarea acestor costuri datorate catre autoritatile romane sau straine. Aceasta valoare va fi inclusa la randul CIT33.  </label>
+            <div>
+            <input type="number" id="input q22Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q23">
+            <label for="selectq23">23. Exista cheltuielile privind bunurile de natura stocurilor sau a mijloacelor fixe amortizabile constatate lipsă din gestiune ori degradate, neimputabile care nu se incadreaza in situatiile de mai jos?</label>
+
+            <label>1. bunurile/mijloacele fixe amortizabile distruse ca urmare a unor calamități naturale sau a altor cauze de forță majoră;</label>
+            <label>2. bunurile/mijloacele fixe amortizabile pentru care au fost încheiate contracte de asigurare;</label>
+            <label>3. bunurile/mijloacele fixe amortizabile degradate calitativ, dacă se face dovada distrugerii;</label>
+            <label>4. alimentele destinate consumului uman, cu data-limită de consum aproape de expirare, altele decât cele aflate în situațiile/condițiile prevăzute la pct. 1 și 2, dacă transferul acestora este efectuat potrivit prevederilor legale privind diminuarea risipei alimentare;</label>
+            <label>5. subprodusele de origine animală, nedestinate consumului uman, altele decât cele aflate în situațiile/condițiile prevăzute la pct. 1 - 3, dacă eliminarea acestora este efectuată potrivit prevederilor legale privind diminuarea risipei alimentare;</label>
+            <label>6. produsele agroalimentare, devenite improprii consumului uman sau animal, dacă direcționarea/dirijarea vizează transformarea acestora în compost/biogaz sau neutralizarea acestora, potrivit prevederilor legale privind diminuarea risipei alimentare;</label>
+            <label>7. alte bunuri decât cele aflate în situațiile/condițiile prevăzute la pct. 1 - 6, dacă termenul de valabilitate/expirare este depășit, potrivit legii;</label>
+            <select class="form-control" id="selectq23" onchange="showDiv('q23Yes', this);completed('selectq23');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q23Yes" style="display:none">
+            <label for="selectq23Yes">Va rugam introduceti valoarea acestor costuri cu stocuri sau mijloace fixe constatate lipsa ori degradate. Aceasta valoare va fi inclusa la randul CIT33.</label>
+            <div>
+            <input type="number" id="input q23Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q24">
+            <label for="selectq24">24. Societatea a inregistrat in contabilitate cheltuieli care nu au la bază documente justificative, potrivit legii, sau prin care să se facă dovada efectuării operaţiunii sau intrarii în gestiune, după caz, potrivit normelor?</label>
+            <select class="form-control" id="selectq24" onchange="showDiv('q24Yes', this);completed('selectq24');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q24Yes" style="display:none">
+            <label for="selectq24Yes">Va rugam introduceti valoarea acestor costuri. Aceasta valoare va fi inclusa la randul CIT33.</label>
+            <div>
+            <input type="number" id="input q24Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q25">
+            <label for="selectq25">25. S-au inregistrat cheltuieli care nu sunt efectuate in scopul desfasurarii activitatii economice a societatii??</label>
+            <select class="form-control" id="selectq25" onchange="showDiv('q25Yes', this);completed('selectq25');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q25Yes" style="display:none">
+            <label for="selectq25Yes">Va rugam introduceti valoarea acestor cheltuieli.</label>
+            <div>
+            <input type="number" id="input q25Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q26">
+            <label for="selectq26">26. Societatea a inregistrat cheltuieli in favoarea asociatilor, cu exceptia cumpararii de bunuri si servicii de la acestia, precum cele de mai jos?</label>
+                <label>·  Cheltuieli cu amortizarea, intretinerea si repararea mijloacelor de transport utilizate de catre participanti, in favoarea acestora?</label>  
+                <label>·  Bunuri, marfuri si serviciile acordate participantilor in mod gratuit sau lucrari executate pentru acestia?</label>
+                <label>·  Prestari de servicii care nu au legatura cu obiectul de activitate al societatii</label> 
+                <label>·  Cheltuieli cu chiria si intretinerea spatiilor puse la dispozitia acestora?</label>
+            <select class="form-control" id="selectq26" onchange="showDiv('q26Yes', this);completed('selectq26');" >
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q26Yes" style="display:none">
+            <label for="selectq26Yes">Va rugam introduceti valoarea acestor costuri. Aceasta valoare va fi inclusa la randul CIT33.</label>
+            <div>
+            <input type="number" id="input q26Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q27">
+            <label for="selectq27">27. Societatea a beneficiat de servicii prestate de furnizori romani si straini? Exista documente care pot demonstra prestarea efectiva a acestor servicii?</label>
+            <select class="form-control" id="selectq27" onchange="showDiv('q27Yes', this);completed('selectq27');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q27Yes" style="display:none">
+            <label for="selectq27Yes" style="color:red;"> DISCLAIMER! In cazul lipsei documentelor justificative, autoritatile fiscale pot considera cheltuielile ca fiind nedeductibile </label>
+            
+        </div>
+        <div class="form-group" id="q28">
+            <label for="selectq28">28. A inregistrat Societatea cheltuieli cu taxele neretinute la sursa in legatura cu veniturile obtinute in Romania de catre persoane nerezidente?</label>
+            <select class="form-control" id="selectq28" onchange="showDiv('q28Yes', this);completed('selectq28');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q28Yes" style="display:none">
+            <label for="selectq28Yes">Va rugam introduceti valoarea acestor cheltuieli.</label>
+            <div>
+            <input type="number" id="input q28Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q29">
+            <label for="selectq29">29. Societatea a inregistrat provizioane si ajustari de depreciere constituite in anul curent cu un tratament fiscal deductibil?</label>
+            <select class="form-control" id="selectq29" onchange="showDiv('q29.1', this);completed('selectq29');dontShowDivNo('q29.1Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q29.1" style="display:none">
+            <label for="selectq29.1">29.1. Au existat provizioane pentru creante clienti incerti (50% deductibil conform art. 26 alin. (1) lit. c) din Codul Fiscal)?</label>
+            <select class="form-control" id="selectq29.1" onchange="showDiv('q29.1Yes', this); completed('selectq29.1');" >
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q29.1Yes" style="display:none">
+            <label for="selectq29.1Yes">Va rugam sa introduceti valoarea provizioanelor pentru clienti incerti considerate deductibile la calculul de impozit pe profit. Aceasta valoare va diminua suma inclusa la linia CIT29.</label>
+            <div>
+            <input type="number" id="input q29.1Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q30">
+            <label for="selectq30">30. Societatea a inregistrat venituri din reversarea provizioanelor constituite in trecut cu un tratament fiscal deductibil?</label>
+            <select class="form-control" id="selectq30" onchange="showDiv('q30.1', this);completed('selectq30');dontShowDivNo('q30.1Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q30.1" style="display:none">
+            <label for="selectq30.1">30.1. Au existat reversari de provizioane pentru creante clienti incerti?</label>
+            <select class="form-control" id="selectq30.1" onchange="showDiv('q30.1Yes', this); completed('selectq30.1');" >
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q30.1Yes" style="display:none">
+            <label for="selectq30.1Yes">Va rugam sa introduceti valoarea veniturilor din reversarea provizioanelor pentru clienti incerti. Aceasta valoare va diminua suma inclusa la linia CIT20.</label>
+            <div>
+            <input type="number" id="input q30.1Yes" >
+        </div>
+        </div>
+        </div>
+        <div class="form-group" id="q31">
+            <label for="selectq31">31. Societatea a inregistrat venituri din anularea, recuperarea, inclusiv refacturarea cheltuielilor pentru care nu s-a acordat deducere (altele decat provizioanele)?</label>
+            <select class="form-control" id="selectq31" onchange="showDiv('q31Yes', this);completed('selectq31');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q31Yes" style="display:none">
+            <label for="selectq31Yes">Va rugam introduceti valoarea acestor venituri.</label>
+            <div>
+            <input type="number" id="input q31Yes" >
+        </div>
+        </div>
+         <div class="form-group" id="q32">
+            <label for="selectq32">32. Exista pierderi inregistrate la scoaterea din evidenţa a creanţelor in alte conditii decat cele de la art.25(4)h)? </label>
+            <select class="form-control" id="selectq32" onchange="showDiv('q32Yes', this);completed('selectq32');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q32Yes" style="display:none">
+            <label for="selectq32Yes">Va rugam introduceti valoarea acestor pierderi.</label>
+            <div>
+            <input type="number" id="input q32Yes" >
+        </div>
+        </div>
+
+        <div class="form-group" id="q33">
+            <label for="selectq33">33. Societatea a incasat dividende de la o alta persoana juridica romana sau din strainatate?</label>
+            <select class="form-control" id="selectq33" onchange="showDiv('q33.1', this);completed('selectq33');dontShowDivNo('q33.1Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q33.1" style="display:none">
+            <label for="selectq33.1">33.1. Au fost respectate conditiile de venituri neimpozabile conform art. 23 lit. a) si b) din Codul Fiscal?</label>
+            <select class="form-control" id="selectq33.1" onchange="showDiv('q33.1Yes', this); completed('selectq33.1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q33.1Yes" style="display:none">
+            <label for="selectq33.1Yes" style="color:red">Valoarea veniturilor din contul 761 va fi inregistrata la randul CIT17.</label>
+            
+        </div>
+        <div class="form-group" id="q34">
+            <label for="selectq34">34. Societatea a inregistrat venituri din evaluarea/reevaluarea/vânzarea/cesionarea titlurilor de participare deținute la o persoană juridică română sau la o persoană juridică străină?</label>
+            <select class="form-control" id="selectq34" onchange="showDiv('q34.1', this);completed('selectq34');dontShowDivNo('q34.1Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q34.1" style="display:none">
+            <label for="selectq34.1">34.1. Au fost respectate conditiile de venituri neimpozabile conform art. 23 lit. i) din Codul Fiscal (i.e. existenta conventie si perioadă neîntreruptă de un an cu minimum 10% din capitalul social al persoanei juridice la care are titlurile de participare)?</label>
+            <select class="form-control" id="selectq34.1" onchange="showDiv('q34.1Yes', this); completed('selectq34.1');">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q34.1Yes" style="display:none">
+            <label for="selectq34.1Yes" style="color:red">Valoarea veniturilor va fi inregistrata la randul CIT18.</label>
+            
+        </div>
+        <div class="form-group" id="q35">
+            <label for="selectq35">35. Societatea a inregistrat valoarea titlurilor de participare noi sau sume reprezentând majorarea valorii nominale a titlurilor de participare existente, ca urmare a încorporării rezervelor, beneficiilor sau primelor de emisiune la persoanele juridice la care se dețin titluri de participare?</label>
+            <select class="form-control" id="selectq35" onchange="showDiv('q35Yes',this);completed('selectq35'); dontShowDivNo('q35Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q35Yes" style="display:none">
+            <label for="selectq35Yes">Va rugam sa ne furnizati valoarea veniturilor inregistrate de societate in anul fiscal curent in urma operatiunilor mentionate. Aceste valori vor putea fi incluse la linia CIT18.  </label>
+            <div>
+            <input type="number" id="input q35Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q36">
+            <label for="selectq36">36. Exista pierderi fiscale de recuperat din ani precedenti, care nu au expirat pentru anul fiscal curent?</label>
+            <select class="form-control" id="selectq36" onchange="showDiv('q36Yes',this);completed('selectq36'); dontShowDivNo('q36Yes',this);">
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q36Yes" style="display:none">
+            <label for="selectq36Yes">Va rugam introduceti valoarea pierderilor fiscale reportate. Aceasta valoare se include la linia CIT37.  </label>
+            <div>
+            <input type="number" id="input q36Yes" >
+        </div>
+        </div>
+        <div class="form-group" id="q37">
+            <label for="selectq37">37. Societatea a efectuat achizitii de la contribuabili inactivi?</label>
+            <select class="form-control" id="selectq37" onchange="showDiv('q37Yes',this);completed('selectq37'); dontShowDivNo('q37Yes',this);" >
+                <option value="notChosen">Choose answer...</option>
+                <option value="no">Nu</option>
+                <option value="yes">Da</option>
+            </select>
+        </div>
+        <div class="form-group" id="q37Yes" style="display:none">
+            <label for="selectq37Yes">Va rugam introduceti valoarea achizitiilor de la contribuabili inactivi. Aceasta valoare se include la linia CIT33.  </label>
+            <div>
+            <input type="number" id="input q37Yes" >
+        </div>
+        </div>
+        
+        <!-- <div class="form-group" id="otherFieldDiv" hidden>
+          <label for="otherField">Here you go!</label>
+          <select class="form-control" id="otherField">
+            <option>Yay</option>
+            <option>Woo</option>
+            <option>Hazah</option>
+            <option>Yipee</option>
+            <option>Hoorah</option>
+          </select>
+        </div>
+        
+        <div class="form-group" id="seeAnotherFieldGroup" hidden>
+          <label for="seeAnotherFieldGroup3" >Do You Want To See Another Group of Fields?</label>
+          <select class="form-control" id="seeAnotherFieldGroup3">
+                <option value="no">Not Particularly.</option>
+                <option value="yes">I Guess!</option>
+          </select>
+        </div>
+        
+        <div class="form-group" id="otherFieldGroupDiv">
+          <div class="row">
+            <div class="col-6">
+              <label for="otherField1">Group: Heres One!</label>
+              <input type="text" class="form-control w-100" id="otherField1">
+            </div>
+            <div class="col-6">
+              <label for="otherField2">Group: Another One!</label>
+              <input type="text" class="form-control w-100" id="otherField2">
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="comments">Comments/Questions</label>
+          <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button> -->
+        <button type="submit" class="btn btn-primary btn-lg" value="4" Style="font-size:large; height:50px;width: 400px;margin-bottom:10px;opacity:0.95; background:  linear-gradient(to right, rgba(74, 16, 112, 0.844) 0%, rgba(176, 72, 245, 0.844) 25%, rgba(176, 97, 221, 0.844) 43%, rgba(167, 100, 211, 0.844) 53%, rgba(95, 19, 146, 0.644) 75%, rgba(74, 16, 112, 0.644) 100%);"> Submit</button>
+      </form>
+      
+
+</body>
+
+</html>
