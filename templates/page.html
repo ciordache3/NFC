@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFC Tag Test</title>
 
-    <div class="form-group" id="q1">
-        <label for="selectq1">1. Unitatea este functionala corespunzator?</label>
+
+<div class="container">
+    <form method="POST" enctype = "multipart/form-data" style="padding-left:0px;">
+
+    <div class="form-group">
+        <label for="ans1">1. Unitatea este functionala corespunzator?</label>
         <br>
-        <select class="form-control" id="ans1" onchange="showDiv('q1.1',this);dontShowDiv4elementsNo('q1.1','q1.1No','q1.2','q1.2Yes',this);completed('selectq1');">
+        <select class="form-control" id="ans1" name="ans1">
             <option value="notChosen">Choose answer...</option>
-            <option value="no">Nu</option>
-            <option value="yes">Da</option>
+            <option value="Nu">Nu</option>
+            <option value="Da">Da</option>
         </select>
     </br>
     </div>
 
-    <div class="form-group" id="q1">
+    <div class="form-group" id="q1" >
         <label for="selectq1">2. Se afla elemente ce pot pune in pericol functionarea corecta a unitatii?</label>
         <br>
-        <select class="form-control" id="ans2" onchange="showDiv('q1.1',this);dontShowDiv4elementsNo('q1.1','q1.1No','q1.2','q1.2Yes',this);completed('selectq1');">
+        <select class="form-control" id="ans2" name="ans2">
             <option value="notChosen">Choose answer...</option>
-            <option value="no">Nu</option>
-            <option value="yes">Da</option>
+            <option value="Nu">Nu</option>
+            <option value="Da">Da</option>
         </select>
     </br>
     </div>
@@ -31,27 +35,30 @@
     <div class="form-group" id="q1">
         <label for="selectq1">3. Au existat intreruperi ale unitatii in ultimele 30 de zile?</label>
         <br>
-        <select class="form-control" id="ans3" onchange="showDiv('q1.1',this);dontShowDiv4elementsNo('q1.1','q1.1No','q1.2','q1.2Yes',this);completed('selectq1');">
+        <select class="form-control" id="ans3" name="ans3">
             <option value="notChosen">Choose answer...</option>
-            <option value="no">Nu</option>
-            <option value="yes">Da</option>
+            <option value="Nu">Nu</option>
+            <option value="Da">Da</option>
         </select>
     </br>
     </div>
     <div class="form-group" id="q1">
         <label for="selectq1">4. Elementele unitatii prezinta deteriorari?</label>
         <br>
-        <select class="form-control" id="ans4" onchange="showDiv('q1.1',this);dontShowDiv4elementsNo('q1.1','q1.1No','q1.2','q1.2Yes',this);completed('selectq1');">
+        <select class="form-control" id="ans4" name="ans4">
             <option value="notChosen">Choose answer...</option>
-            <option value="no">Nu</option>
-            <option value="yes">Da</option>
+            <option value="Nu">Nu</option>
+            <option value="Da">Da</option>
         </select>
     </br>
     </div>
+   
 
-    <button type="submit" class="btn btn-primary btn-lg" value="4" Style="font-size:large; height:50px;width: 200px;margin-bottom:10px;opacity:0.95;"> Submit</button>
-
-</head>
+    <div class="form-group" style="margin-top:10px;">
+        <input type="submit" name="submit" class="btn btn-info btn-md" font-size:small; width:60px;" value="Send">
+    </div>
+    </form>
+</div>
 <body>
     
 </body>
