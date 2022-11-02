@@ -11,10 +11,7 @@ def login():
         ans3 = request.form['ans3']
         ans4 = request.form['ans4']
 
-    if ans1 == "Yes":
         print(ans1)
-    else:
-        print("Not ok")
     
     return render_template('page.html')
 
